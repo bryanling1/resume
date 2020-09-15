@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+    margin: 0.1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.center-text{
+    text-align: center
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap
+}
+.center-row{
+    justify-content: center;
+    align-items: center;
+}
+.flex-grow{
+    flex-grow: 1
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 0.6em
+}
+@media print {
+    body{
+        width: 8.5in;
+        height: 11in; 
+   } 
+}
+body{
+        width: 8.5in;
+        height: 11in; 
+        padding: 0 0.3in;
+   } 
+a{
+    text-decoration: none;
+    color: inherit
+}
+.anchor-img{
+    display: inline-flex
+}
+h1{
+    font-size: 80px
+}
+h2{
+    font-size: 15px;
+    color: #0984e3
+}
+p, a, li{
+    font-size: 15px
+}
+hr{
+    border: 1px solid#0984e3
+}
+.default-a{
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<h1 class="center-text">Bryan Ling</h1>
+<div class="row center-row">
+    <a class="anchor-img" target="_blank" href=mailto:b3ling@uwaterloo.ca><img class="icon" src="https://image.flaticon.com/icons/png/512/8/8807.png"/></a>
+    <a href=mailto:b3ling@uwaterloo.ca target="_blank"><p>b3ling@uwaterloo.ca</p></a>
+    <a class="anchor-img" href="http://github.com/bryanling1" target="_blank"><img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/></a>
+    <a href="http://github.com/bryanling1" target="_blank"><p>github.com/bryanling1</p></a>
+    <a class="anchor-img" href="http://linkedin.com/in/bryanling" target="_blank"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/LinkedIn_logo_In-Black.svg/1200px-LinkedIn_logo_In-Black.svg.png"/></a>
+    <a href="http://linkedin.com/in/bryanling" target="_blank"><p>linkedin.com/in/bryanling</p></a>
+    <img class="icon" src="https://cdn.onlinewebfonts.com/svg/img_352137.png"/>
+    <p>519-591-1889</p>
+</div>
+<div class="row">
+    <h2><b>SKILLS</b></h2>
+</div>
+<hr/>
+<div class="row">
+    <ul>
+        <li><b>Technologies: </b>React/Redux, Node.js, Firebase, OpenCV, Socket.io, Express, Flask, Git, Material UI, Tensorflow</li>
+        <li><b>Languages:</b> JavaScript, Typescript, Python, CSS, HTML</li>
+    </ul>
+</div>
+<div class="row">
+    <h2><b>WORK EXPERIENCE</b></h2>
+</div>
+<hr/>
+<div class="row">
+    <div class="row">
+        <p class="flex-grow">
+            <b>Cognitive Systems</b><i> - Software Engineering Co-op</i>
+        </p>
+        <i><p>May 2020 - August 2020</p></i>
+    </div>
+    <ul>
+        <li>
+            Deployed an interactive web-app to display long-term changes in quiet WiFi-motion data
+            through matrix manipulation, streamlining the data visualization process from <b>15+ minutes to under 60 seconds</b> 
+        </li>
+        <li>
+            Integrated a Flask-app backend handling Wifi-motion related API and data vault calls to automate
+            the task of identifying quiet samples within a period of time
+        </li>
+        <li>
+            Designed the responsive front-end interface, allowing the user to select a snapshot of data to be
+            displayed in graph format using React, Material UI, and ChartJS
+        </li>
+        <li>
+            Documented hypothesis testing regarding channel respone data in a 
+            WiFi network hierarchy to determine the effects of device movement with Matplotlib
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="row">
+        <p class="flex-grow">
+            <b>Ontario League of Associated Esports</b><i> - Full Stack Developer</i>
+        </p>
+        <i><p>February 2019 - August 2019</p></i>
+    </div>
+    <ul>
+        <li >
+            Developed and deployed the <a class="default-a" target="_blank"href="https://olae.ca/">customer-facing website</a> for creating user accounts, statistics, and 
+            a real-time matchmaking system for over <b>300 active users</b> with React/Redux and Firebase 
+        </li>
+        <li>
+            Integrated Node.js backend to work with Riot Games’ API to deliver matchmaking statistics 
+            used to identify top-performing competitors 
+        </li>
+        <li>
+            Automated social media content generation using image and video processing libraries PIL and Moviepy in Python
+        </li>
+        <li>
+            Implemented an admin dashboard used to control lobby status in real-time with Scoket.io
+        </li>
+        <li>
+            Wireframed and implemented UI following responsive design requirements with Material UI and Adobe XD
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="row">
+        <p class="flex-grow">
+            <b>LCR Research</b><i>- Software Engineering Intern</i> 
+        </p>
+        <i><p>June 2018 - September 2018</p></i>
+    </div>
+    <ul>
+        <li>
+            Rebuilt the customer-facing desktop application by developing a GUI in Python using Tkinter, contributing
+            to the company's migration from C# to Python
+        </li>
+        <li>
+            Integrated product requirements including customizable settings and CSV data logging
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <h2><b>PROJECTS</b></h2>
+</div>
+<hr/>
+<div class="row">
+    <a href="https://github.com/bryanling1/pokemongobot" clgass="row" style="align-items: center;" target="_blank">
+        <b>Pokemon Go Walker </b> <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/><i> - Pokemon Go Computer Vision Script</i>
+    </a>
+    <ul>
+        <li>
+            Trained a convolutional neural network in TensorFlow to detect the game's current menu
+        </li>
+        <li>
+            Composed a script in OpenCV and Python to automate image generation and file sorting for Tensorflow training
+        </li>
+        <li>
+            Implemented TensorFlow’s object detection API to detect in-game objects in real-time with OpenCV
+        </li>
+    </ul>
+    <a href="https://github.com/bryanling1/unitywear2" class="row" style="align-items: center;" target="_blank">
+        <b>Unity Wear </b> <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/><i> - 3D Garment Design Visualizer web-app</i>
+    </a>
+    <ul>
+        <li>
+            Developed a PNG to SVG image converter using OpenCV contour hierarchy tree to determine relationships
+            between positive and negative space contours of the same color
+        </li>
+        <li>
+            Integrated an interactive 3D garment design interface with React and ThreeJS for t-shirt previews
+        </li>
+    </ul>
+    <a href="https://github.com/bryanling1/Crambarry" class="row" style="align-items: center;" target="_blank">
+        <b>Crambarry.com </b> <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/><i> - Online Gamified Classroom Web App</i>
+    </a>
+    <ul>
+        <li>
+            Developed a roulette rewards system, player customizability, multi-user flashcard generator, 
+            discussion/question forums, and chat rooms using React/Redux and Firebase
+        </li>
+        <li>
+            Application approved by Waterloo Region District School Board for student use
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <h2><b>EDUCATION</b></h2>
+</div>
+<hr/>
+<div class="row">
+    <p class="flex-grow">University of Waterloo, Candidate for Bachelor of Software Engineering (BSE)</p><i>2019-2024</i>
+        <!-- <li>Relevant Courses: Programming Principles, Intro to Data Abstraction and Implementation, 
+            Methods of Software Engineering</li> -->
+</div>
+</body>
+</html>
