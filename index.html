@@ -4,7 +4,7 @@
 <style>
 *{
     margin: 0.1em;
-    font-family: Open Sans;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.55em
 }
 .center-text{
@@ -47,10 +47,10 @@ a{
     display: inline-flex
 }
 h1{
-    font-size: 60px
+    font-size: 40px
 }
 h2{
-    font-size: 17px;
+    font-size: 14px;
     color: #0984e3
 }
 p, a, li{
@@ -77,13 +77,23 @@ hr{
     <p>519-591-1889</p>
 </div>
 <div class="row">
+    <h2><b>EDUCATION</b></h2>
+</div>
+<hr/>
+<div class="row">
+    <p class="flex-grow">University of Waterloo, Software Engineering</p><p><i>Expected 2019 - 2024</i></p>
+        <!-- <li>Relevant Courses: Programming Principles, Intro to Data Abstraction and Implementation, 
+            Methods of Software Engineering</li> -->
+</div>
+<div class="row">
     <h2><b>SKILLS</b></h2>
 </div>
 <hr/>
 <div class="row">
     <ul>
-        <li><b>Languages:</b> JavaScript, TypeScript, Python, CSS, HTML5, C, C++</li>
-        <li><b>Technologies: </b>React/Redux, Node.js, Firebase, OpenCV, NumPy, Express, Flask, Git, Material UI, Tensorflow</li>
+        <li><b>Languages:</b> JavaScript, TypeScript, Python, CSS, HTML5, C++</li>
+        <li><b>Frameworks: </b>React/Redux, Node.js, Material UI, Styled-Components, Express, Flask, Git</li>
+        <li><b>Technologies: </b>Git, GraphQL, Apollo Client, Firebase, OpenCV, Jira</li>
     </ul>
 </div>
 <div class="row">
@@ -93,13 +103,36 @@ hr{
 <div class="row">
     <div class="row">
         <p class="flex-grow">
+            <b>Applied Brain Research</b><i> - Frontend Engineering Co-op</i>
+        </p>
+        <i><p>January 2021 - Expected April 2021</p></i>
+    </div>
+    <ul>
+        <li>
+            Created in-house SVG Graphing Library from scratch to plot neural network training, confusion matrix, and neuron activity 
+            data with real-time data animations using <b>React, Typescript, and Styled-Components</b>
+        </li>
+        <li>
+            Developed a feature-rich Data Table with inline editing and sorting features with unit tests using <b>Jest</b>
+        </li>
+        <li>
+            Connected React client to <b>GraphQL</b> backend integrating mutations and caching queries with <b>Apollo Client</b>
+        </li>
+        <li>
+            Maintained an NPM template package with built-in <b>CI</b> with <b>Husky, Prettier, </b> and commit-linting used on current and future Typescript libraries
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="row">
+        <p class="flex-grow">
             <b>Cognitive Systems</b><i> - Software Engineering Intern</i>
         </p>
         <i><p>May 2020 - August 2020</p></i>
     </div>
     <ul>
         <li>
-            Streamlined the data visualization process from <b>15+ minutes to under 60 seconds</b> by deploying a <b>React</b> web-app to display long-term changes in quiet WiFi-motion data
+            Streamlined the data visualization process from <b>15 minutes to under 60 seconds</b> by deploying a <b>React</b> web-app to display changes in quiet WiFi-motion data
             through matrix manipulation
         </li>
         <li>
@@ -127,20 +160,17 @@ hr{
             displays competitor statistics, and includes a real-time matchmaking system for over <b>300 active users</b> with <b>React/Redux</b> and <b>Firebase</b> 
         </li>
         <li>
-            Integrated <b>Node.js</b> backend to work with <b>Riot Games’ API</b> to deliver matchmaking statistics to identify top-performing competitors 
+            Integrated <b>Node.js</b> backend to work with <b>Riot Games’ API</b> to deliver matchmaking statistics to identify top competitors 
         </li>
         <li>
             Automated social media content using image and video processing libraries PIL and MoviePy in <b>Python</b>
         </li>
         <li>
-            Implemented an admin dashboard used to control lobby status with Socket.io
-        </li>
-        <li>
-            Wireframed and implemented a responsive UI with Material UI and Adobe XD for mobile support
+            Wireframed and conducted user testing by creating a responsive frontend mockup with Material UI components using <b>Adobe XD</b>
         </li>
     </ul>
 </div>
-<div class="row">
+<!-- <div class="row">
     <div class="row">
         <p class="flex-grow">
             <b>LCR Research</b><i>- Software Engineering Intern</i> 
@@ -153,7 +183,7 @@ hr{
             features including device settings customization and logging data to CSV files
         </li>
     </ul>
-</div>
+</div> -->
 <div class="row">
     <h2><b>PROJECTS</b></h2>
 </div>
@@ -179,7 +209,7 @@ hr{
             Trained a convolutional neural network in <b>TensorFlow</b> to detect the game's current menu
         </li>
         <li>
-            Developed a script in <b>OpenCV</b> and Python to automate image generation and file sorting for training
+            Developed a script in <b>OpenCV</b> and Python to automate image generation and file sorting for training from video data
         </li>
         <li>
             Implemented TensorFlow’s object detection API to detect in-game objects in real-time with OpenCV
@@ -197,15 +227,6 @@ hr{
             Integrated an interactive 3D garment design interface with React and ThreeJS for t-shirt previews
         </li>
     </ul>
-</div>
-<div class="row">
-    <h2><b>EDUCATION</b></h2>
-</div>
-<hr/>
-<div class="row">
-    <p class="flex-grow">University of Waterloo, Software Engineering</p><p><i>2019 - 2024</i></p>
-        <!-- <li>Relevant Courses: Programming Principles, Intro to Data Abstraction and Implementation, 
-            Methods of Software Engineering</li> -->
 </div>
 </body>
 </html>
