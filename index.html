@@ -4,16 +4,24 @@
 <style>
 *{
     margin: 0.1em;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.55em
+    font-family: 'Helvetica', 'Times New Roman', Times, serif;
+    line-height: 1.68em;
+    font-size: 13px;
 }
 .center-text{
     text-align: center
 }
 .row{
+    display: block
+}
+.inner-row{
     width: 100%;
     display: flex;
-    flex-wrap:wrap
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.inner-left{
+    flex: 1;
 }
 .center-row{
     justify-content: center;
@@ -25,13 +33,12 @@
 .icon{
     width: 20px;
     height: 20px;
-    margin: 0 0.6em
 }
 @media print {
     body{
         width: 8.5in;
         height: 11in; 
-        padding: 0 0.4in;
+        padding: 0 0.5in;
    } 
 }
 body{
@@ -41,49 +48,54 @@ body{
    } 
 a{
     text-decoration: none;
-    color: inherit
+    color: inherit;
+}
+.icon-anchor{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.icon-anchor:first-child{
+    margin-left: 5px;
 }
 .anchor-img{
-    display: inline-flex
+    display: inline-flex;
+    margin: 0 5px 0 5px;
 }
 h1{
     font-size: 40px
 }
 h2{
-    font-size: 14px;
-    color: #0984e3
+    font-size: 13px;
+    color: #0984e3;
 }
 p, a, li{
-    font-size: 14px
+    font-size: 13px;
 }
 hr{
     border: 1px solid#0984e3
 }
-.default-a{
+/* .default-a{
     text-decoration: underline;
-}
+} */
+
+/* i {
+    font-style: normal;
+} */
 </style>
 </head>
 <body>
 <h1 class="center-text">Bryan Ling</h1>
-<div class="row center-row">
+<div class="inner-row center-row">
     <a class="anchor-img" target="_blank" href=mailto:b3ling@uwaterloo.ca><img class="icon" src="https://image.flaticon.com/icons/png/512/8/8807.png"/></a>
     <a href=mailto:b3ling@uwaterloo.ca target="_blank"><p>b3ling@uwaterloo.ca</p></a>
     <a class="anchor-img" href="http://github.com/bryanling1" target="_blank"><img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/></a>
     <a href="http://github.com/bryanling1" target="_blank"><p>github.com/bryanling1</p></a>
     <a class="anchor-img" href="http://linkedin.com/in/bryanling" target="_blank"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/LinkedIn_logo_In-Black.svg/1200px-LinkedIn_logo_In-Black.svg.png"/></a>
     <a href="http://linkedin.com/in/bryanling" target="_blank"><p>linkedin.com/in/bryanling</p></a>
-    <img class="icon" src="https://cdn.onlinewebfonts.com/svg/img_352137.png"/>
+    <img class="icon anchor-img" src="https://cdn.onlinewebfonts.com/svg/img_352137.png"/>
     <p>519-591-1889</p>
-</div>
-<div class="row">
-    <h2><b>EDUCATION</b></h2>
-</div>
-<hr/>
-<div class="row">
-    <p class="flex-grow">University of Waterloo, Software Engineering</p><p><i>Expected 2019 - 2024</i></p>
-        <!-- <li>Relevant Courses: Programming Principles, Intro to Data Abstraction and Implementation, 
-            Methods of Software Engineering</li> -->
 </div>
 <div class="row">
     <h2><b>SKILLS</b></h2>
@@ -91,9 +103,9 @@ hr{
 <hr/>
 <div class="row">
     <ul>
-        <li><b>Languages:</b> JavaScript, TypeScript, Python, CSS, HTML5, C++</li>
-        <li><b>Frameworks: </b>React/Redux, Node.js, Material UI, Styled-Components, GreenSock, Express, Flask</li>
-        <li><b>Technologies: </b>MongoDB, Jest, Git, Apollo Client, Firebase, OpenCV, Jira, Clickup</li>
+        <li><b>Languages:</b> JavaScript, TypeScript, Python, CSS, HTML5</li>
+        <li><b>Frameworks: </b>React/Redux, Node.js, Material-UI, styled-components, GreenSock, Express, Flask</li>
+        <li><b>Technologies: </b>MongoDB, Jest, Git, Apollo Client, Docker, Firebase, OpenCV, Adobe XD, Jira, Clickup</li>
     </ul>
 </div>
 <div class="row">
@@ -102,38 +114,44 @@ hr{
 <hr/>
 <div class="row">
     <div class="row">
-        <p class="flex-grow">
-            <b>Applied Brain Research</b><i> - Frontend Engineering Co-op</i>
-        </p>
-        <i><p>January 2021 - Expected April 2021</p></i>
+        <div class='inner-row'>
+            <p class="flex-grow">
+                Applied Brain Research - Frontend Engineer Intern
+            </p>
+            January 2021 - April 2021
+        </div>
+        <div class='inner-row'>
+            <p class="flex-grow">
+                </i>
+            </p>
+        </div>
     </div>
     <ul>
         <li>
-            Created in-house SVG Graphing Library from scratch to plot neural network training, confusion matrix, and neuron activity 
-            data with real-time data animations using <b>React, Typescript, and Styled-Components</b>
+            Deployed an SVG Graphing Library from scratch to plot neural network training, confusion matrix, and neuron activity 
+            data with real-time animations using <b>React, Typescript,</b> and <b>styled-components</b>
         </li>
         <li>
-            Developed a feature-rich Data Table with inline editing and sorting features from scratch with <b>Material UI</b> writing unit tests with
-            <b>Jest</b> and other components for a Keyword Spotting cloud interface.
+            Developed Data Table with inline editing and sorting features from scratch with <b>Material-UI</b> and other components 
+            for a Keyword Spotting cloud interface in <b>Apollo Client</b>
         </li>
         <li>
-            Connected React client to <b>GraphQL</b> backend by integrating mutations with <b>Apollo Client</b>
-        </li>
-        <li>
-            Maintained an NPM template package with built-in <b>CI</b> with <b>Husky, Prettier, </b> and commit-linting
+            Maintained an NPM template package with <b>CI</b> using <b>Husky, Prettier, </b> and commit-linting
         </li>
     </ul>
 </div>
 <div class="row">
     <div class="row">
-        <p class="flex-grow">
-            <b>Cognitive Systems</b><i> - Software Engineering Intern</i>
-        </p>
-        <i><p>May 2020 - August 2020</p></i>
+        <div class="inner-row">
+            <p class="flex-grow">
+                Cognitive Systems - Software Engineer Intern
+            </p>
+            <p>May 2020 - August 2020</p>
+        </div>
     </div>
     <ul>
         <li>
-            Streamlined the data visualization process from <b>15 minutes to under 60 seconds</b> by deploying a <b>React</b> web-app to display changes in quiet WiFi-motion data
+            Streamlined the data visualization process from <b>15 minutes to under 60 seconds</b> by deploying a <b>React</b> web app to display changes in quiet WiFi-motion data
             through matrix manipulation
         </li>
         <li>
@@ -144,16 +162,19 @@ hr{
             Designed frontend interface allowing users to select sections of data and graphs them with ChartJS
         </li>
         <li>
-            Used Matplotlib and <b>NumPy</b> to investigate the effects of device movement on channel response data in a WiFi network
+            Used Matplotlib and <b>NumPy</b> to investigate the effects of device movement on channel response data with Wifi
         </li>
     </ul>
 </div>
 <div class="row">
     <div class="row">
-        <p class="flex-grow">
-            <b>Ontario League of Associated Esports</b><i> - Full Stack Developer</i>
-        </p>
-        <i><p>February 2019 - August 2019</p></i>
+        <div class="inner-row">
+            <p class="flex-grow">
+                Ontario League of Associated Esports - Full Stack Developer
+            </p>
+            <p>February 2019 - August 2019</p>
+        </div>
+
     </div>
     <ul>
         <li>
@@ -161,13 +182,13 @@ hr{
             displays competitor statistics, and includes a real-time matchmaking system for over <b>300 active users</b> with <b>React/Redux</b> and <b>Firebase</b> 
         </li>
         <li>
-            Integrated <b>Node.js</b> backend to work with <b>Riot Games’ API</b> to deliver matchmaking statistics to identify top competitors 
+            Integrated <b>Node.js</b> REST API with <b>Riot Games’ API</b> for matchmaking statistics to identify top competitors
         </li>
         <li>
             Automated social media content using image and video processing libraries PIL and MoviePy in <b>Python</b>
         </li>
         <li>
-            Wireframed and conducted user testing by creating a responsive frontend mockup with Material UI components using <b>Adobe XD</b>
+            Wireframed a responsive frontend mockup with Material-UI components using <b>Adobe XD</b> and conducted user testing
         </li>
     </ul>
 </div>
@@ -190,34 +211,32 @@ hr{
 </div>
 <hr/>
 <div class="row">
-        <b>Overwatch League Arena </b> 
-        <a href="https://github.com/bryanling1/Overwatch-League-Arena" class="row" style="align-items: center;" target="_blank">
+    <div class="inner-row">
+        Overwatch League Arena
+        <a href="https://github.com/bryanling1/Overwatch-League-Arena" target="_blank" class="icon-anchor">
             <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/>
         </a>
-        <a href="https://github.com/bryanling1/Overwatch-League-Arena" class="row" style="align-items: center;" target="_blank">
+        <a href="https://www.reddit.com/r/OverwatchLeague/comments/mrebzq/i_built_the_owl_arena/?utm_source=share&utm_medium=web2x&context=3" target="_blank" class="icon-anchor">
+            <img class="icon" src="https://image.flaticon.com/icons/png/512/52/52053.png"/>
+        </a>
+        <div>
+        <i class="default-a">Esports Stadium Simulation</i>
+        </div>
+       
+    </div>
+    <ul>
+        <li>Generated a combined <b>10,000</b> views across Reddit and Youtube and was contacted by <b>Blizzard Entertainment</b> to create a project feature sponsored by <b>Coca-Cola</b>
+        <li>Developed character timeline animations using <b>React/Redux</b> and <b>GreenSock</b> to sync with dataflow from <b>Socket.io</b></li>
+        <li>Automated animation loop finding with HSV masking in <b>OpenCV</b> and the collecting of team branding assets with <b>Puppeteer</b></li>
+    </ul>
+    
+    <div class="inner-row">
+        Crambarry
+        <a href="https://github.com/bryanling1/Crambarry" class="icon-anchor" target="_blank">
             <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/>
         </a>
-        - <i class="default-a">Esports Stadium Simulation</i>
-    <ul>
-        <li>Reached out by <b>Blizzard Entertainment</b> to create a project feature sponsored by <b>Coca-Cola</b> with the original
-            project generating a combined <b>10,000</b> views across Reddit and Youtube</li>
-        <li>Developed character timeline animations using <b>React</b> and <b>GreenSock</b> </li>
-        <li>Automated task of animation loop finding with <b>OpenCV</b> HSV masking and collecting team branding assets with <b>Puppeteer</b></li>
-    </ul>
-    
-    <a href="https://github.com/bryanling1/Overwatch-League-Arena" class="row" style="align-items: center;" target="_blank">
-        <b>Overwatch League Arena </b> <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/> - <i class="default-a">Esports Stadium Simulation</i>
-    </a>
-    <ul>
-        <li>Reached out by <b>Blizzard Entertainment</b> to create a project feature sponsored by <b>Coca-Cola</b> with the original
-            project generating a combined <b>10,000</b> views across Reddit and Youtube</li>
-        <li>Developed character timeline animations using <b>React</b> and <b>GreenSock</b> </li>
-        <li>Automated task of animation loop finding with <b>OpenCV</b> HSV masking and collecting team branding assets with <b>Puppeteer</b></li>
-    </ul>
-    
-    <a href="https://github.com/bryanling1/Crambarry" class="row" style="align-items: center;" target="_blank">
-        <b>Crambarry.com </b> <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/> - <i class="default-a">Classroom Social Network Web-App</i>
-    </a>
+        <i class="default-a">Classroom Social Network Web-App</i>
+    </div>
     <ul>
         <li>
             Developed a roulette rewards system, customizable player profiles, a multi-user flashcard generator, 
@@ -225,6 +244,25 @@ hr{
         </li>
         <li>
             Application approved by Waterloo Region District School Board for student use
+        </li>
+    </ul>
+
+    <div class="inner-row">
+        Clip Ship
+        <a href="https://github.com/bryanling1/ClipShip" class="icon-anchor" target="_blank">
+            <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/>
+        </a>
+        <i class="default-a">Browser Video Editor</i>
+    </div>
+    <ul>
+        <li>
+            Built video editor in frontend with React/Redux with drag and drop features for timeline editing
+        </li>
+        <li>
+            Created a REST API backend with <b>Express, FFmpeg</b> and <b>MongoDB</b> to store user data and render video files
+        </li>
+        <li>
+            Published as a multi-container application with <b>Docker-compose</b>
         </li>
     </ul>
 <!--     <a href="https://github.com/bryanling1/pokemongobot" class="row" style="align-items: center;" target="_blank">
@@ -241,9 +279,14 @@ hr{
             Implemented TensorFlow’s object detection API to detect in-game objects in real-time with OpenCV
         </li>
     </ul> -->
-    <a href="https://github.com/bryanling1/unitywear2" class="row" style="align-items: center;" target="_blank">
-        <b>Unity Wear </b> <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/> - <i class="default-a">3D Garment Design Visualizer Web-App</i>
-    </a>
+    <div class="inner-row">
+        Unity Wear
+        <a href="https://github.com/bryanling1/unitywear2" class="icon-anchor" target="_blank">
+             <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/>
+        </a>
+        <i class="default-a">3D Garment Design Visualizer Web-App</i>
+    </div>
+    
     <ul>
         <li>
             Developed a PNG to SVG image converter using <b>OpenCV</b> contour hierarchy tree to determine relationships
@@ -253,6 +296,15 @@ hr{
             Integrated an interactive 3D garment design interface with React and ThreeJS for t-shirt previews
         </li>
     </ul>
+    <div class="row">
+        <h2><b>EDUCATION</b></h2>
+    </div>
+    <hr/>
+    <div class="inner-row">
+        <p class="flex-grow">University of Waterloo, Software Engineering</p><p>Expected 2019 - 2024</p>
+            <!-- <li>Relevant Courses: Programming Principles, Intro to Data Abstraction and Implementation, 
+                Methods of Software Engineering</li> -->
+    </div>
 </div>
 </body>
 </html>
