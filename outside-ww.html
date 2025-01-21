@@ -5,7 +5,7 @@
 *{
     margin: 0.1em;
     font-family: 'Helvetica', 'Times New Roman', Times, serif;
-    line-height: 1.7em;
+    line-height: 1.5em;
 }
 .center-text{
     text-align: center
@@ -33,6 +33,9 @@
 .icon{
     width: auto;
     height: 20px;
+}
+.hide{
+    opacity: 0
 }
 @media print {
     body{
@@ -64,12 +67,12 @@ a{
     margin: 0 5px 0 5px;
 }
 h1{
-    font-size: 50px
+    font-size: 42px
 }
 h2{
     font-size: 16px;
     font-weight: 100;
-    line-height: 1.8em;
+    line-height: 1.3em;
 }
 
 .accent{
@@ -77,7 +80,7 @@ h2{
 }
 
 p, a, li{
-    font-size: 15px;
+    font-size: 16px;
 }
 hr{
     border: 1px solid#0984e3
@@ -95,9 +98,9 @@ hr{
 <body>
 <h1 class="center-text">Bryan Ling</h1>
 <div class="inner-row center-row">
-    <a class="anchor-img" target="_blank" href=mailto:b3ling@uwaterloo.ca><img class="icon" src="https://image.flaticon.com/icons/png/512/8/8807.png"/></a>
+    <a class="anchor-img" target="_blank" href=mailto:b3ling@uwaterloo.ca><img class="icon" src="https://cdn-icons-png.flaticon.com/512/46/46951.png"/></a>
     <a href=mailto:b3ling@uwaterloo.ca target="_blank"><p>b3ling@uwaterloo.ca</p></a>
-    <a class="anchor-img" href="http://github.com/bryanling1" target="_blank"><img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/></a>
+    <a class="anchor-img" href="http://github.com/bryanling1" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></a>
     <a href="http://github.com/bryanling1" target="_blank"><p>github.com/bryanling1</p></a>
     <a class="anchor-img" href="http://linkedin.com/in/bryanling" target="_blank">
         <img class="icon" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG19.png"/></a>
@@ -110,7 +113,7 @@ hr{
 </div>
 <hr/>
 <div class="inner-row">
-    <p class="flex-grow">University of Waterloo, Software Engineering</p><p>Expected 2019 - 2024</p>
+    <p class="flex-grow">University of Waterloo, Bachelor of Software Engineering</p><p>2019 - 2024</p>
 </div>
 <div class="row">
     <h2 class="accent"><b>SKILLS</b></h2>
@@ -118,184 +121,154 @@ hr{
 <hr/>
 <div class="row">
     <ul>
-        <li><b>Languages:</b> JavaScript, TypeScript, Python, C++</li>
-        <li><b>Frontend: </b>React, Redux, Material-UI, styled-components, Apollo Client, GreenSock, Adobe XD</li>
-        <li><b>Backend: </b>Node.js, Express, Flask, MongoDB, Jest, Git, Docker, Firebase, OpenCV, Jira</li>
+        <li><b>Languages:</b> TypeScript, JavaScript, Python</li>
+        <li><b>Frontend: </b>React, Material-UI, styled-components, Electron, Jest, Figma</li>
+        <li><b>Backend: </b>Next.js, Node.js, MongoDB, Git, Flask, Docker, Firebase</li>
     </ul>
 </div>
 <div class="row accent">
     <h2><b>WORK EXPERIENCE</b></h2>
 </div>
 <hr/>
-<div class="row">
-    <div class="row">
+<div class="inner-row">
+    <h2><b>Intern Wave</b></h2>
+    <span class="default-a flex-grow"> - Junior Full Stack Developer</span>
+    Jan 2024 - present
+</div>
+<ul>
+    <li>Built <a href="https://internwave.com" target="_blank">website</a> for <b>5000 users</b> with authentication and user reviews with Next.js, MongoDB, and TypeScript</li>
+    <li>Launched desktop app with <b>1000 downloads</b> for web-scraping and organizing job applications on Mac and Windows with Electron</li> 
+</ul>
         <div class='inner-row'>
             <h2 class="flex-grow">
-                <b>Faire</b><i> - Frontend Engineer Intern</i>
+                <b>Faire</b> - iOS Engineer Intern
             </h2>
             <h2>
-                <i>Expected Sept - Dec 2021</i>
+                Sept - Dec 2023
             </h2>
         </div>
-    </div>
-    <ul>
-        <li>
-            Increased speed of user verification by <b>95%</b> for the risk team by deploying an admin feature for opening external links
-        </li>
-    </ul>
-    <div class="row">
+        <ul>
+            <li>
+                Accelerated test failure for <b>entire iOS team</b> by deploying a Jenkins script to automate reporting of Xcode unit test results to all GitHub pull requests.
+            </li>
+        </ul>
         <div class='inner-row'>
             <h2 class="flex-grow">
-                <b>Applied Brain Research</b><i> - Frontend Engineer Intern</i>
+                - iOS Engineer Intern
             </h2>
             <h2>
-                <i>Jan - Apr 2021</i>
+                Jan - Apr 2023
             </h2>
         </div>
-    </div>
     <ul>
         <li>
-            Deployed an NPM Graphing Library used across internal projects to plot real-time AI training, confusion matrix, and neuron activity 
-            data using <b>React, Typescript, SVG</b> and <b>styled-components</b>
+            Led implementation of multi-user chat feature on both brand and retailer iOS apps with Swift.
         </li>
-        <li>
-            Developed a cloud interface for clients and internal use with a reusable table component
-            supporting inline editing and sorting with <b> React, Apollo Client,</b> and <b>Material-UI</b>
-        </li>
-        <!-- <li>
-            Designed an NPM template package used in current and future projects for <b>CI</b> with <b>Husky, Prettier, </b> and commit-linting
-        </li> -->
     </ul>
-</div>
-<div class="row">
-    <div class="row">
-        <div class="inner-row">
+        <div class='inner-row'>
             <h2 class="flex-grow">
-                <b>Cognitive System</b><i> - Software Engineer Intern</i>
+                - Frontend Engineer Intern
             </h2>
             <h2>
-                <i>May - Aug 2020</i>
+                Apr - Aug 2022
             </h2>
         </div>
-    </div>
     <ul>
         <li>
-            Streamlined a data visualization process from <b>15 minutes to 60 seconds</b> by deploying a web app to 
-            display changes to motion detected in a WiFi network with <b>React</b>, <b>ChartJS</b>, and <b>Flask</b> used by the data science team
+            Boosted promotion creation by <b>5%</b> by implementing a one-click feature for Faire Summer Market event
         </li>
     </ul>
-</div>
-<div class="row">
-    <div class="row">
-        <div class="inner-row">
+        <div class='inner-row'>
             <h2 class="flex-grow">
-                <b>Ontario League of Associated Esports</b><i> - Full Stack Developer</i>
+                - Frontend Engineer Intern
             </h2>
             <h2>
-                <i>Feb - Aug 2019</i>
+                Sept - Dec 2021
+            </h2>
+        </div>
+    <ul>
+        <li>
+            Streamlined a verification process that saved <b>4-8 hours</b> with <b>130-180 users per week</b> by deploying admin and customer-facing form components.
+        </li>
+        <li>
+            Saved Risk team <b>35 hours a month</b> by developing an admin dashboard feature for opening external links
+        </li>
+    </ul>
+        <div class='inner-row'>
+            <h2 class="flex-grow">
+                <b>Applied Brain Research</b> - Frontend Developer Intern
+            </h2>
+            <h2>
+                Jan - Apr 2021
+            </h2>
+        </div>
+    <ul>
+        <li>
+            Deployed an interactive graphing library used across projects to plot neuron activity to NPM
+        </li>
+        <li>
+            Developed advanced table component with inline editing and sorting for web tools running machine learning models with React, Apollo Client, and Material-UI
+        </li>
+    </ul>
+        <div class="inner-row">
+            <h2 class="flex-grow">
+                <b>Cognitive System</b> - Software Engineer Intern
+            </h2>
+            <h2>
+                May - Aug 2020
+            </h2>
+        </div>
+    <ul>
+        <li>
+            Streamlined data visualization from <b>15 minutes to 60 seconds</b> by developing a web app to 
+            display changes in WiFi signals with React, ChartJS, and Flask
+        </li>
+    </ul>
+
+
+
+        <div class="inner-row">
+            <h2 class="flex-grow">
+                <b>Ontario League of Associated Esports</b> - Full Stack Developer
+            </h2>
+            <h2>
+                Feb 2019 - Feb 2020
             </h2>
         </div>
 
-    </div>
+
     <ul>
         <li>
-            Built <a class="default-a" target="_blank"href="https://olae.ca/">website</a> for <b>300 concurrent users</b> 
-            with a real-time matchmaking system, user authentication, and player statistic displays with <b>React,</b> <b>Redux,</b> and <b>Firebase</b> 
-        </li>
-        <li>
-            Integrated a <b>Node.js</b> and <b>Express</b> statistics backend app with Riot Games API to identify top-level candidates
-        </li>
-        <li>
-            Automated social media content generation using PIL and MoviePy in <b>Python</b>
+            Built <a class="default-a" target="_blank"href="https://olae-d3d90.web.app/">website</a> for <b>300 users</b> 
+            with a real-time matchmaking system, user authentication, and player statistic displays from Riot Games API with React, Redux, and Firebase
         </li>
     </ul>
-</div>
-<div class="row">
+
+
     <h2 class="accent"><b>PROJECTS</b></h2>
-</div>
+
 <hr/>
-<div class="row">
+
+
     <div class="inner-row">
         <a href="https://github.com/bryanling1/Overwatch-League-Arena" target="_blank">
             <h2><b>Overwatch League Arena</b></h2>
         </a>
         <a href="https://github.com/bryanling1/Overwatch-League-Arena" target="_blank" class="icon-anchor">
-            <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
         </a>
         <a href="https://www.reddit.com/r/OverwatchLeague/comments/mrebzq/i_built_the_owl_arena/?utm_source=share&utm_medium=web2x&context=3" target="_blank" class="icon-anchor">
-            <img class="icon" src="https://image.flaticon.com/icons/png/512/52/52053.png"/>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/52/52053.png"/>
         </a>
         <a href="https://www.youtube.com/watch?v=uOOF0p3tppk" target="_blank" class="icon-anchor">
             <img class="icon" src="https://brandslogos.com/wp-content/uploads/images/large/youtube-icon-logo-black-and-white.png"/>
         </a>
-        <div>
-        <i class="default-a"> - In-Person Esports Event Stadium Simulation</i>
-        </div>
+        <span class="default-a flex-grow"> - Esports stadium simulation</span>
+        2021
     </div>
     <ul>
-        <li>Project featured on <b>Overwatch League's</b> official YouTube channel with over <b>23,000</b> views sponsored by <b>Coca-Cola</b></li>
-        <li>Developed character timeline animations using <b>React, Redux, Typescript</b> and <b>GreenSock</b> 
-            to sync with computer vision detected 
-            events from video footage using <b>OpenCV</b> and <b>Socket.io</b></li>
+        <li>Collaborated with <b>Blizzard Entertainment</b> with a <b>Coca-Cola</b> sponsorship by creating a video about the project with over <b>23,000 views</b></li>
+        <li>Developed UI animations to sync with real-time computer vision detected events from video footage using React, GreenSock, OpenCV and Socket.io</li>
     </ul>
-    
-    <div class="inner-row">
-        <a href="https://github.com/bryanling1/Crambarry" target="_blank">
-            <h2><b>Crambarry</b></h2>
-        </a>
-        
-        <a href="https://github.com/bryanling1/Crambarry" class="icon-anchor" target="_blank">
-            <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/>
-        </a>
-        <i class="default-a">- Gamified Classroom Social Web App</i>
-    </div>
-    <ul>
-        <li>
-            Application approved by Waterloo Region District School Board for student use
-        </li>
-        <li>
-            Developed a roulette rewards system, customizable player profiles,
-            discussion forums, and chat rooms using <b>React, Redux, </b>  and <b>Firebase</b> with prototypes in <b>Adobe XD</b>
-        </li>
-    </ul>
-
-    <div class="inner-row">
-        <a href="https://github.com/bryanling1/ClipShip" target="_blank">
-            <h2><b>Clip Ship</b></h2>
-        </a>
-        <a href="https://github.com/bryanling1/ClipShip" class="icon-anchor" target="_blank">
-            <img class="icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/>
-        </a>
-        <i class="default-a"> - Video Editor Web App for Twitch.tv</i>
-    </div>
-    <ul>
-        <li>
-            Built a Twitch live stream clip editor using drag and drop 
-            timeline features with <b>React</b> and <b>Redux</b>
-        </li>
-        <li>
-            Designed a RESTful API backend with <b>Express, FFmpeg,</b> and <b>MongoDB</b> to store user data and render video files
-        </li>
-        <li>
-            Published as a multi-container application with <b>Docker-compose</b>
-        </li>
-    </ul>
-</div>
-<!-- <div class="row">
-    <div class="row">
-        <p class="flex-grow">
-            <b>LCR Research</b><i>- Software Engineering Intern</i> 
-        </p>
-        <i><p>June 2018 - September 2018</p></i>
-    </div>
-    <ul>
-        <li>
-            Rebuilt customer-facing desktop application by developing a GUI in Python using Tkinter, integrating
-            features including device settings customization and logging data to CSV files
-        </li>
-    </ul>
-</div> -->
-
-
 </body>
 </html>
